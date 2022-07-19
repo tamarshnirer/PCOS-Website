@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Website</title>
+    {% load static %}
+    <link rel="stylesheet" href="../../static/site/styling.css">
+</head>
+<body>
+
+    <div class="hero">
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'aboutus' %}">About</a></li>
+                <li><a href="{% url 'aboutpcos' %}">About PCOS</a></li>
+                <li><a href="{% url 'disclamier' %}">Disclaimer</a></li>
+            </ul>
+            <a href="{% url 'test' %}" class="btn">PCOS Test</a>
+        </nav>
+
+        <div class="content">
+            <br>
+            <h1>Final Project Website</h1>
+            <p>We've worked on a project studying the disease potential of PCOS in women, by analyzing the gut microbiome of more than 3,000 women.<br>
+            The dataset and mentorship was provided by DayTwo company.
+            We created this website using Django framework.</p>
+
+        </div>
+    </div>
+
+</body>
+</html>

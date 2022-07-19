@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Result</title>
+      {% load static %}
+    <link rel="stylesheet" href="../../static/site/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+              <div class="hero">
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li> <br>
+                <li><a href="{% url 'aboutus' %}">About</a></li> <br>
+                <li><a href="{% url 'aboutpcos' %}">About PCOS</a></li> <br>
+                <li><a href="{% url 'disclamier' %}">Disclaimer</a></li>
+
+            </ul>
+        </nav>
+      </div>
+
+    <div class="container">
+      <div class="text">You have {{ prob }}% chance of having PCOS</div></div>
+  </body>
+</html>

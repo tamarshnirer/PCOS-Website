@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+    <title>About PCOS</title>
+    <!----CSS link----->
+    {% load static %}
+    <link rel="stylesheet" href="../../static/site/styling.css">
+    
+     
+<style> 
+body {
+ font-family: 'Brush Script MT', cursive;
+ background: linear-gradient(90deg, rgba(280,400,255,7) 0%, rgba(480,235,250,3) 35%, rgba(594,360,255,9) 100%);  
+}
+</style>
+</head>
+<body>
+
+        <div class="hero">
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'aboutus' %}">About</a></li>
+                <li><a href="{% url 'aboutpcos' %}">About PCOS</a></li>
+                <li><a href="{% url 'disclamier' %}">Disclaimer</a></li>
+            </ul>
+           <a href="{% url 'test' %}" class="btn">PCOS Test</a>
+        </nav>
+
+        <div class="content">
+            <span class="title">PCOS SYNDROME</span>
+            <br>
+            <p> Common symptoms of PCOS include: <br>
+
+1 - Irregular periods or no periods at all<br>
+2 - Difficulty getting pregnant (because of irregular ovulation or failure to ovulate)<br>
+3 - Excessive hair growth (hirsutism) – usually on the face, chest, back or buttocks<br>
+4 - Weight gain<br>
+5 -Thinning hair and hair loss from the head<br>
+6 - Oily skin or acne <br>
+You should talk to your doctor if you have any of these symptoms and think you may have PCOS.<br><br>
+                       <a href="https://www.nhs.uk/conditions/polycystic-ovary-syndrome-pcos/" class="btn">for more information</a> </p>
+        </div>  
+        </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Disclaimer</title>
+    {% load static %}
+    <link rel="stylesheet" href="../../static/site/styling.css">
+</head>
+<body>
+<div class="hero">
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'aboutus' %}">About</a></li>
+                <li><a href="{% url 'aboutpcos' %}">About PCOS</a></li>
+                <li><a href="{% url 'disclamier' %}">Disclaimer</a></li>
+            </ul>
+            <a href="{% url 'test' %}" class="btn">PCOS Test</a>
+        </nav>
+      </div>
+
+        <div class="content">
+            <br>
+            <h1>Dislaimer</h1>
+            <p>We developed this website as part of the final project of our studies as proof of concept and not for commercial purposes.
+                Thus, we are not responsible for any damage or harm caused by the use of this website.
+                If you have any medical concerns, please meet your healthcare provider.</p>
+        </div>
+    </div>
+
+</body>
+</html>

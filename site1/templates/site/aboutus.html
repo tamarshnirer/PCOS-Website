@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+    <title>About Us</title>
+    <!----CSS link----->
+    {% load static %}
+
+    <link rel="stylesheet" href="../../static/site/styling.css">
+    
+     
+<style> 
+body {
+ font-family: 'Brush Script MT', cursive;
+ background: linear-gradient(90deg, rgba(804,233,255,1) 0%, rgba(400,2300,208,1) 35%, rgba(294,245,255,1) 100%);  
+}
+</style>
+</head>
+<body>
+
+        <div class="hero">
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'aboutus' %}">About</a></li>
+                <li><a href="{% url 'aboutpcos' %}">About PCOS</a></li>
+                <li><a href="{% url 'disclamier' %}">Disclaimer</a></li>
+
+            </ul>
+            <a href="{% url 'test' %}" class="btn">PCOS Test</a>
+        </nav>
+
+        <div class="content">
+            <span class="title">About Us</span>
+            <br>
+            <p>We are Tamar and Lian, students at Tel-Aviv University in the faculty of engineering.
+            Tamar is a student for double-major degree in Business Management and Digital Sciences for Hi-Tech and Lian is a student  for double-major degree in biology and Digital Sciences for Hi-Tech
+            We are both on our last year of the degree</p>
+        </div>  
+        </div>
+
+    
+</body>
+</html

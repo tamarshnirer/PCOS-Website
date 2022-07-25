@@ -26,17 +26,13 @@ def form(request):
 
 def result(request):
     vector = []
-    richness_genefamilies_cpm = request.GET.get('richness_genefamilies_cpm')
-    vector.append(richness_genefamilies_cpm)
+    shannon_genefamilies_cpm = request.GET.get('shanon_genefamilies_cpm')
+    vector.append(shannon_genefamilies_cpm)
     bmi = request.GET.get('bmi')
     vector.append(bmi)
-    gene1 = request.GET.get('gene1')
-    vector.append(gene1)
-    gene2 = request.GET.get('gene2')
-    vector.append(gene2)
     vector = np.array(vector)
     vector = vector.astype(dtype='float64')
-    vector_df = pd.DataFrame([vector], columns=['richness_genefamilies_cpm', 'bmi', 'UniRef90_A0A3D4R0L2', 'UniRef90_A0A078RCN3'])
+    vector_df = pd.DataFrame([vector], columns=['shanon_genefamilies_cpm', 'bmi'])
     with open('C:\\Users\\PC\\Desktop\\PCOS_website-project\\models\\scaler2.pkl', 'rb') as f:
         scaler = pickle.load(f)
     vector_df = scaler.transform(vector_df)
